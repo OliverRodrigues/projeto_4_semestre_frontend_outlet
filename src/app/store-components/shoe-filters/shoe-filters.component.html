@@ -1,0 +1,52 @@
+<img src="../../assets/filter.png" class="InactiveFilter" (click)="toggle($event)">
+<div class="FilterContainer" *ngIf="showFilters">
+    <div class="PriceFilter">
+        <h4>Preço:</h4>
+        <p>
+            <input type="radio" name="price" value="A" [checked]="price==='A'" (change)="filterChange('A', null, null)">
+            Sem filtro
+        </p>
+
+        <p>
+            <input type="radio" name="price" value="0" [checked]="price==='0'" (change)="filterChange('0', null, null)">
+            0 R$ - 50 R$
+        </p>
+
+        <p>
+            <input type="radio" name="price" value="50" [checked]="price==='50'" (change)="filterChange('50', null, null)">
+            50 R$ - 100 R$
+        </p>
+
+
+        <p>
+            <input type="radio" name="price" value="100" [checked]="price==='100'" (change)="filterChange('100', null, null)">
+            100 R$ - 200 R$
+        </p>
+
+
+        <p>
+            <input type="radio" name="price" value="200" [checked]="price==='200'" (change)="filterChange('200', null, null)">
+            200 R$ +
+        </p>
+    </div>
+
+    <div class="BrandFilter">
+        <h4>Marca:</h4>
+        <p>
+            <input type="radio" name="brand" value="A" [checked]="brand==='A'" (change)="filterChange(null, null,'A')">
+            Sem filtro
+        </p>
+        <p>
+            <input type="radio" name="brand" value="Nike" [checked]="brand==='Nike'" (change)="filterChange(null, null,'Nike')">
+            Nike
+        </p>
+        <p>
+            <input type="radio" name="brand" value="Adidas" [checked]="brand==='Adidas'" (change)="filterChange(null, null,'Adidas')">
+            Adidas
+        </p>
+        <p>
+            <input type="radio" name="brand" value="Puma" [checked]="brand==='Puma'" (change)="filterChange(null, null,'Puma')">
+            Puma
+        </p>
+    </div>
+</div>
