@@ -1,6 +1,9 @@
 
 # Outlet Uni9
 
+Link do app online:
+https://projetouninove.netlify.app/
+
 Como iniciar o front end do projeto:
 
 
